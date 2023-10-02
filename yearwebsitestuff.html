@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head><title>School Got Wrong</title></head>
+<body style="background-color:black; font-color:white;">
+    
+<center>
+<h1><p style="color:white;">What Did Your School Get Wrong?</p></h1>
+<br>
+<p style="font-family:arial; font-size:15px; color:white;">American Schools get a lot of things wrong. Sure, it's easy to make a few minor mistakes, but once we get into<br>
+more complex topics, a lot of errors in what schools teach get revealed. It's troubling to say the<br>
+least - how do sort out what's true and what's false? That's what this website is for - figuring out<br>
+just what your school got wrong. All you have to do is enter the decade you graduated in, and read along!<br>
+<br><h2><p style="color:white;"> Enter Your High School Graduation Decade</h2></p>
+
+<script>var select = document.getElementById("Year");
+    
+    var days = ["2020s", "2010s", "2000s", "1990s", "1980s", "1970s"];
+    
+    for (var i = 0; i < days.length; i++) {
+      var opt = days[i];
+      var el = document.createElement("option");
+      el.textContent = opt;
+      el.value = opt;
+      select.appendChild(el);
+    }
+    
+    function getResponse(eleme) {
+      var e = document.getElementById("Year");
+      var strUser = e.options[e.selectedIndex].value;
+      if (strUser == '2020s') {
+        let html = document.getElementById("textbox").innerHTML="<br> <p style='font-family:arial; font-size:20px; color:white;'>• This one got shared by school nurses all around, but did you know that you shouldn't tilt your head back if you have a nosebleed? This could cause you to choke or vomit as a result of blood going back into your throat. <a href='https://www.nytimes.com/2008/04/29/health/29real.html'>(Source)</a><br><br>• You were probably taught at some point that people in the time of Christopher Columbus all thought the world was flat. However, this is a myth that pervades history - most people knew the earth was a globe! <a href='https://www.history.com/news/christopher-columbus-never-set-out-to-prove-the-earth-was-round'>(Source)</a><br><br>• A common myth that gets thrown around a lot in health classes is that cracking your knuckles can cause arthritis. This, as it turns out, isn't true - it's perfectly safe to crack your knuckles as much as you'd like. <a href='https://www.health.harvard.edu/pain/does-knuckle-cracking-cause-arthritis'>(Source)</a><br><br>• A fun fact about taste for you - there is actually no such thing as a 'taste map,' or the idea that different areas of the tongue result in you tasting different things. At most, there's just different regions of <i>sensitivity</i> to taste! <a href='https://www.wired.com/story/science-of-taste/'>(Source)</a></p>";
+      } else if (strUser == '2010s') {
+        let html = document.getElementById("textbox").innerHTML="<br> <p style='font-family:arial; font-size:20px; color:white;'>• You were probably taught at some point that we'd never be able to map out the entire human genome due to its complexity. However, in 2003, we documented the first 92%, and in 2022 we documented the remaining 8%. <a href='https://www.nih.gov/news-events/nih-research-matters/first-complete-sequence-human-genome'>(Source)</a><br> <br>• This one got shared by school nurses all around, but did you know that you shouldn't tilt your head back if you have a nosebleed? This could cause you to choke or vomit as a result of blood going back into your throat. <a href='https://www.nytimes.com/2008/04/29/health/29real.html'> (Source)</a><br><br>• You were probably taught at some point that people in the time of Christopher Columbus all thought the world was flat. However, this is a myth that pervades history - most people knew the earth was a globe! <a href='https://www.history.com/news/christopher-columbus-never-set-out-to-prove-the-earth-was-round'>(Source)</a><br><br>• A common myth that gets thrown around a lot in health classes is that cracking your knuckles can cause arthritis. This, as it turns out, isn't true - it's perfectly safe to crack your knuckles as much as you'd like. <a href='https://www.health.harvard.edu/pain/does-knuckle-cracking-cause-arthritis'>(Source)</a><br><br>• A fun fact about taste for you - there is actually no such thing as a 'taste map,' or the idea that different areas of the tongue result in you tasting different things. At most, there's just different regions of <i>sensitivity</i> to taste! <a href='https://www.wired.com/story/science-of-taste/'>(Source)</a></p>";
+    } else if (strUser == '2000s') {
+        let html = document.getElementById("textbox").innerHTML="<br> <p style='font-family:arial; font-size:20px; color:white;'>• Contrary to what DARE might have taught you, marijuana is not considered a substantial gateway drug, with the best evidence being limited and nature, and with most marijuana users not going on to use other drugs. <a href='web.archive.org/web/20230910200309/https://www.cdc.gov/marijuana/health-effects/risk-of-other-drugs.html'>(Source)</a><br><br>• You were probably taught at some point that we'd never be able to map out the entire human genome due to its complexity. However, in 2003, we documented the first 92%, and in 2022 we documented the remaining 8%. <a href='https://www.nih.gov/news-events/nih-research-matters/first-complete-sequence-human-genome'>(Source)</a><br><br> • This one got shared by school nurses all around, but did you know that you shouldn't tilt your head back if you have a nosebleed? This could cause you to choke or vomit as a result of blood going back into your throat. <a href='https://www.nytimes.com/2008/04/29/health/29real.html'> (Source)</a><br><br>• You were probably taught at some point that people in the time of Christopher Columbus all thought the world was flat. However, this is a myth that pervades history - most people knew the earth was a globe! <a href='https://www.history.com/news/christopher-columbus-never-set-out-to-prove-the-earth-was-round'>(Source)</a><br><br>• On the topic of Christopher Columbus, you might've been taught that he was a pretty upstanding guy, or at minimum just that he was average in terms of morality. Take a second to Google his relationship to slavery and genocide. <br><br>• A common myth that gets thrown around a lot in health classes is that cracking your knuckles can cause arthritis. This, as it turns out, isn't true - it's perfectly safe to crack your knuckles as much as you'd like. <a href='https://www.health.harvard.edu/pain/does-knuckle-cracking-cause-arthritis'>(Source)</a><br><br>• The original food pyramid was introduced in 1992, and seemed to imply that there were different tiers of 'importance' to what food you ate. Since changed in 2011, this was deemed an inaccurate and potentially harmful way to view food intake. Food is food after all! <a href='https://www.inspirahealthnetwork.org/news/breaking-down-food-pyramid'>(Source)</a><br><br>• A fun fact about taste for you - there is actually no such thing as a 'taste map,' or the idea that different areas of the tongue result in you tasting different things. At most, there's just different regions of <i>sensitivity</i> to taste! <a href='https://www.wired.com/story/science-of-taste/'>(Source)</a></p>";
+    } else if (strUser == '1990s') {
+        let html = document.getElementById("textbox").innerHTML="<br> <p style='font-family:arial; font-size:20px; color:white;'>• Contrary to what DARE might have taught you, marijuana is not considered a substantial gateway drug, with the best evidence being limited and nature, and with most marijuana users not going on to use other drugs. <a href='web.archive.org/web/20230910200309/https://www.cdc.gov/marijuana/health-effects/risk-of-other-drugs.html'>(Source)</a><br><br>• You were probably taught at some point that we'd never be able to map out the entire human genome due to its complexity. However, in 2003, we documented the first 92%, and in 2022 we documented the remaining 8%. <a href='https://www.nih.gov/news-events/nih-research-matters/first-complete-sequence-human-genome'>(Source)</a><br><br> • This one got shared by school nurses all around, but did you know that you shouldn't tilt your head back if you have a nosebleed? This could cause you to choke or vomit as a result of blood going back into your throat. <a href='https://www.nytimes.com/2008/04/29/health/29real.html'> (Source)</a><br><br>• You were probably taught at some point that people in the time of Christopher Columbus all thought the world was flat. However, this is a myth that pervades history - most people knew the earth was a globe! <a href='https://www.history.com/news/christopher-columbus-never-set-out-to-prove-the-earth-was-round'>(Source)</a><br><br>• On the topic of Christopher Columbus, you might've been taught that he was a pretty upstanding guy, or at minimum just that he was average in terms of morality. Take a second to Google his relationship to slavery and genocide. <br><br>• A common myth that gets thrown around a lot in health classes is that cracking your knuckles can cause arthritis. This, as it turns out, isn't true - it's perfectly safe to crack your knuckles as much as you'd like. <a href='https://www.health.harvard.edu/pain/does-knuckle-cracking-cause-arthritis'>(Source)</a><br><br>• The original food pyramid was introduced in 1992, and seemed to imply that there were different tiers of 'importance' to what food you ate. Since changed in 2011, this was deemed an inaccurate and potentially harmful way to view food intake. Food is food after all! <a href='https://www.inspirahealthnetwork.org/news/breaking-down-food-pyramid'>(Source)</a><br><br>• A fun fact about taste for you - there is actually no such thing as a 'taste map,' or the idea that different areas of the tongue result in you tasting different things. At most, there's just different regions of <i>sensitivity</i> to taste! <a href='https://www.wired.com/story/science-of-taste/'>(Source)</a><br><br>•You might've been taught that lemmings are known to commit suicide because they're just that unintelligent. Turns out, this isn't true - they're smart enough to stay alive! <a href='https://www.adfg.alaska.gov/index.cfm?adfg=wildlifenews.view_article&articles_id=56'>(Source)</a></p>";
+    } else if (strUser == '1980s') {
+        let html = document.getElementById("textbox").innerHTML="<br> <p style='font-family:arial; font-size:20px; color:white;'>• Contrary to what DARE might have taught you, marijuana is not considered a substantial gateway drug, with the best evidence being limited and nature, and with most marijuana users not going on to use other drugs. <a href='web.archive.org/web/20230910200309/https://www.cdc.gov/marijuana/health-effects/risk-of-other-drugs.html'>(Source)</a><br><br>• You were probably taught at some point that we'd never be able to map out the entire human genome due to its complexity. However, in 2003, we documented the first 92%, and in 2022 we documented the remaining 8%. <a href='https://www.nih.gov/news-events/nih-research-matters/first-complete-sequence-human-genome'>(Source)</a><br><br> • This one got shared by school nurses all around, but did you know that you shouldn't tilt your head back if you have a nosebleed? This could cause you to choke or vomit as a result of blood going back into your throat. <a href='https://www.nytimes.com/2008/04/29/health/29real.html'> (Source)</a><br><br>• You were probably taught at some point that people in the time of Christopher Columbus all thought the world was flat. However, this is a myth that pervades history - most people knew the earth was a globe! <a href='https://www.history.com/news/christopher-columbus-never-set-out-to-prove-the-earth-was-round'>(Source)</a><br><br>• On the topic of Christopher Columbus, you might've been taught that he was a pretty upstanding guy, or at minimum just that he was average in terms of morality. Take a second to Google his relationship to slavery and genocide.<br><br>• A common myth that gets thrown around a lot in health classes is that cracking your knuckles can cause arthritis. This, as it turns out, isn't true - it's perfectly safe to crack your knuckles as much as you'd like. <a href='https://www.health.harvard.edu/pain/does-knuckle-cracking-cause-arthritis'>(Source)</a><br><br>• A fun fact about taste for you - there is actually no such thing as a 'taste map,' or the idea that different areas of the tongue result in you tasting different things. At most, there's just different regions of <i>sensitivity</i> to taste! <a href='https://www.wired.com/story/science-of-taste/'>(Source)</a><br><br>•You might've been taught that lemmings are known to commit suicide because they're just that unintelligent. Turns out, this isn't true - they're smart enough to stay alive! <a href='https://www.adfg.alaska.gov/index.cfm?adfg=wildlifenews.view_article&articles_id=56'>(Source)</a></p>";
+      } else {
+        let html = document.getElementById("textbox").innerHTML="<br> <p style='font-family:arial; font-size:20px; color:white;'>• You were probably taught at some point that we'd never be able to map out the entire human genome due to its complexity. However, in 2003, we documented the first 92%, and in 2022 we documented the remaining 8%. <a href='https://www.nih.gov/news-events/nih-research-matters/first-complete-sequence-human-genome'>(Source)</a><br><br>• This one got shared by school nurses all around, but did you know that you shouldn't tilt your head back if you have a nosebleed? This could cause you to choke or vomit as a result of blood going back into your throat. <a href='https://www.nytimes.com/2008/04/29/health/29real.html'>(Source)</a><br><br>• You were probably taught at some point that people in the time of Christopher Columbus all thought the world was flat. However, this is a myth that pervades history - most people knew the earth was a globe! <a href='https://www.history.com/news/christopher-columbus-never-set-out-to-prove-the-earth-was-round'>(Source)</a><br><br>• On the topic of Christopher Columbus, you might've been taught that he was a pretty upstanding guy, or at minimum just that he was average in terms of morality. Take a second to Google his relationship to slavery and genocide.<br><br>• A common myth that gets thrown around a lot in health classes is that cracking your knuckles can cause arthritis. This, as it turns out, isn't true - it's perfectly safe to crack your knuckles as much as you'd like. <a href='https://www.health.harvard.edu/pain/does-knuckle-cracking-cause-arthritis'>(Source)</a><br><br>• A fun fact about taste for you - there is actually no such thing as a 'taste map,' or the idea that different areas of the tongue result in you tasting different things. At most, there's just different regions of <i>sensitivity</i> to taste! <a href='https://www.wired.com/story/science-of-taste/'>(Source)</a><br><br>•You might've been taught that lemmings are known to commit suicide because they're just that unintelligent. Turns out, this isn't true - they're smart enough to stay alive! <a href='https://www.adfg.alaska.gov/index.cfm?adfg=wildlifenews.view_article&articles_id=56'>(Source)</a></p>";
+      }
+    }
+    </script>
+    <select id="Year" onchange=getResponse()>
+        <option>Choose a Decade</option>
+        <option>2020s</option>
+        <option>2010s</option>
+        <option>2000s</option>
+        <option>1990s</option>
+        <option>1980s</option>
+        <option>1970s</option>
+    </select>
+<div id="textbox">
+
+
+</div>
+
+<div id="Questions">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h3><p style="font: size 20px; color:white;">Contact</p></h3>
+        <p style="font-family:arial; color:white;">A: This website was made by me, Mira Lazine - a freelance journalist and (very!) amateur programmer.<br>
+I've got a website available <a href="https://www.miralazine.com">here</a> if you're interested in seeing some of my other projects.<br>
+If you want to suggest a new myth for this website to add on, or some type of change to it, you can contact me at miralazine@gmail.com.
+<br>
+<br>
+This website was inspired directly by the following tweet.</p>
+<img src="https://gcdnb.pbrd.co/images/SVV5qQTMr0oz.jpg?o=1" height="300;" width="400;" alt="A tweet that says Website idea: you input the year you graduated high school and the website generates a list of outdated facts and concepts you were taught in school that have since been disproven"><br>
+<br>
+
+</p></div>
+
+</center>
+</body>
+
+
+</html>
